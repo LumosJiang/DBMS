@@ -1,6 +1,7 @@
-#pragma once
+﻿#pragma once
 
 #include <QtWidgets/QMainWindow>
+#include "DBMS.h"
 #include "ui_DBMSMainWindow.h"
 
 class DBMSMainWindow : public QMainWindow
@@ -12,5 +13,6 @@ public:
     ~DBMSMainWindow();
 
 private:
+    DBMS dbms;
     Ui::DBMSMainWindowClass ui;
 };

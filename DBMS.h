@@ -3,6 +3,7 @@
 #include <QList>
 #include <QDate>
 #include "Variant.h"
+#include "DatabaseManager.h"
 
 enum OrderType {
 	ASC,DESC
@@ -34,5 +35,6 @@ private:
 	bool deleteSQL(QString tableName, QString deleteColumn, QStringList whereExpressions);
 	bool createSQL(QString tableName, QStringList columnList);
 	bool insertSQL(QString tableName, QStringList columns, QStringList columnValueList);
-	QString usedDatabase;
+	bool switchDatabase(QString databaseName);
+	DatabaseManager dbm;
 };

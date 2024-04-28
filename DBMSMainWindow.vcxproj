@@ -97,12 +97,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AccessChecker.h" />
+    <QtMoc Include="AccessChecker.h" />
     <ClInclude Include="BackUp.h" />
-    <ClInclude Include="DatabaseManager.h" />
-    <ClInclude Include="DBMS.h" />
+    <QtMoc Include="DatabaseManager.h" />
+    <QtMoc Include="DBMS.h" />
     <ClInclude Include="Exception.h" />
-    <ClInclude Include="Variant.h" />
+    <QtMoc Include="Variant.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

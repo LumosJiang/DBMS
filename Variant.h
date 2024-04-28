@@ -41,3 +41,13 @@ private:
 	QDate varDate;
 	DataType type;
 };
+
+class FormAttibute :public QObject {
+public:
+	FormAttibute(QString attributeName, DataType type);
+	QString AttributeName();
+	DataType Type();
+private:
+	QString attributeName;
+	DataType type;
+};
